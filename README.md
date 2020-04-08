@@ -15,7 +15,7 @@
 比如我们要将 `http://self-publishing.ebookchain.org` 的内容生成为电子书，只需要执行下面的命令：
 
 ```bash
-docker run --rm -v `pwd`/fonts:/app/fonts \
+docker run --rm -v `pwd`/fonts:/usr/share/fonts \
                 -v `pwd`/output:/app/output \
                 soulteary/docker-gitbook-pdf-generator "http://self-publishing.ebookchain.org"
 ```
