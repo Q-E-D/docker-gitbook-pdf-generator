@@ -3,7 +3,7 @@ LABEL  MAINTAINER="soulteary <soulteary@gmail.com>"
 
 ENV LIBRARY_PATH /lib:/usr/lib
 
-RUN wget https://github.com/Q-E-D/gitbook2pdf/archive/0.1.zip -O /tmp/app.zip && \
+RUN wget https://github.com/Q-E-D/gitbook2pdf/archive/master.zip -O /tmp/app.zip && \
     cd /tmp && unzip app.zip && mv /tmp/gitbook2pdf-master /app
 
 RUN apk add build-base python3-dev gcc musl-dev jpeg-dev zlib-dev libffi-dev cairo-dev pango-dev gdk-pixbuf-dev libxslt-dev && \
